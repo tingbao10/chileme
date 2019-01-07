@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chilema.dao.BusinessDAO">
+	<insert id="business">
+	insert into shop (shopId,userId,shopName,trademark) values(#{shopId},#{userId},#{shopName},#{trademark})
+	</insert>
+	<update id="updateShopName" parameterType="com.chilema.entity.Shop">  
+	 		Update shop set shopName = #{shopName} where shopId = #{shopId}
+	</update>  
+	
+	<update id="updataTrademark" parameterType="com.chilema.entity.Shop">  
+	 		Update shop set trademark = #{trademark} where shopId = #{shopId}
+	</update> 
+	 
+	<select id="login" parameterType="com.chilema.entity.User" resultType="int">
+			select count(*) from user where loginUser=#{loginUser} and password=#{password}
+	</select>
+
+	<select id="selectOrder" parameterType="java.util.Map" resultType="com.chilema.entity.Order">
+			select * from `order` where orderId=#{orderId}
+	</select>
+	
+	<!-- 	<select id="ListOrder" parameterType="java.util.Map" resultType="java.util.List">
+			select * from `order` where 
+	</select> -->
+	
+	<select id="findShopssss"  resultType="com.chilema.entity.Shop">
+			<!-- select * from shop -->
+			select  *  from  shop order by rand() limit 20
+	</select>
+	
+	<select id="findMenuList"  parameterType="java.util.Map" resultType="com.chilema.entity.Menu">
+	<!-- SELECT * from menu WHERE menuId IN (SELECT menuId FROM shop_menu where shopId = "003ebc8226e8444dbc992d39b62172aa"); -->
+			SELECT * from menu WHERE menuId IN (SELECT menuId FROM shop_menu where shopId = #{shopId})
+	</select>
+	
+<!-- 	<delete id="delectMenuId"  parameterType="java.util.Map" resultType="int">
+			delete from menu where menuId = #{menuId}
+	</delete> -->
+	
+	<select id="count" parameterType="java.util.Map">
+		 select  count(*) from shop 
+		 
+	</select>
+	
+	<select id="findStartPage" parameterType="java.util.Map" resultType="com.chilema.entity.Shop">
+		 select * from shop limit #{currentPage},#{totalPage}
+	</select>
+	
+	
+	<insert id="addmenu" parameterType="java.util.Map" >
+			insert into menu (menuId,name,price,img) values(#{menuId},#{name},#{price},#{img});
+	</insert>
+	
+	
+	<insert id="Intermediate" parameterType="java.util.Map">
+			insert into shop_menu (shopId,menuId) values(#{shopId},#{menuId})
+	</insert>
+	
+	
+	<select id="userId" parameterType="java.util.Map" resultType="com.chilema.entity.Shop">
+			select * from shop where userId=#{userId}
+	</select>
+	
+	<select id="findShopId" parameterType="java.util.Map" resultType="com.chilema.entity.Order">
+			select * from `order` where shopId=#{shopId}
+	</select>
+	
+	
+	<select id="findUserIdAjax" parameterType="java.util.Map" resultType="com.chilema.entity.Userinfo">
+			select * from userinfo where userId=#{userId}
+	</select>
+	
+	
+	<update id="updateUserOrder" parameterType="java.util.Map">  
+	 		Update `order` set overTime = #{overTime} where orderId = #{orderId}
+	</update>  
+	
+	<delete id="delectUserOrder" parameterType="java.util.Map">
+			delete from `order` where orderId = #{orderId}
+	</delete>
+	
+	<select id="findUserOrShop" parameterType="java.util.Map">
+			select * from user_group where userId=#{userId}
+	</select>
+	
+</mapper>

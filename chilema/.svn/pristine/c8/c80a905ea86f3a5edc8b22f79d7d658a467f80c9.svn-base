@@ -1,0 +1,19 @@
+
+.sf1{
+	float: left;
+	color: red;
+	display: none;
+}
+.inpoy{
+	float:right;
+    width: 50%;
+    height: 100%;
+    min-height:400px;
+    font-size: 20px;
+   
+
+}
+.inpoy2{
+	 font-size: 30px;
+}
+

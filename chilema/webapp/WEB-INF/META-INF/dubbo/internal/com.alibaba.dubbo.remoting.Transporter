@@ -1,0 +1,14 @@
+netty=com.alibaba.dubbo.remoting.transport.netty.NettyTransporter
+netty4=com.alibaba.dubbo.remoting.transport.netty4.NettyTransporter
+mina=com.alibaba.dubbo.remoting.transport.mina.MinaTransporter
+grizzly=com.alibaba.dubbo.remoting.transport.grizzly.GrizzlyTransporter
+
+netty=com.alibaba.dubbo.remoting.transport.netty.NettyTransporter
+netty4=com.alibaba.dubbo.remoting.transport.netty4.NettyTransporter
+mina=com.alibaba.dubbo.remoting.transport.mina.MinaTransporter
+grizzly=com.alibaba.dubbo.remoting.transport.grizzly.GrizzlyTransporter
+
+netty=com.alibaba.dubbo.remoting.transport.netty.NettyTransporter
+netty4=com.alibaba.dubbo.remoting.transport.netty4.NettyTransporter
+mina=com.alibaba.dubbo.remoting.transport.mina.MinaTransporter
+grizzly=com.alibaba.dubbo.remoting.transport.grizzly.GrizzlyTransporter

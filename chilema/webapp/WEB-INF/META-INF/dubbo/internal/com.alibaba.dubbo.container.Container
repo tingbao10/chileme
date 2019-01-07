@@ -1,0 +1,11 @@
+spring=com.alibaba.dubbo.container.spring.SpringContainer
+log4j=com.alibaba.dubbo.container.log4j.Log4jContainer
+logback=com.alibaba.dubbo.container.logback.LogbackContainer
+
+spring=com.alibaba.dubbo.container.spring.SpringContainer
+log4j=com.alibaba.dubbo.container.log4j.Log4jContainer
+logback=com.alibaba.dubbo.container.logback.LogbackContainer
+
+spring=com.alibaba.dubbo.container.spring.SpringContainer
+log4j=com.alibaba.dubbo.container.log4j.Log4jContainer
+logback=com.alibaba.dubbo.container.logback.LogbackContainer

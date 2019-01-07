@@ -1,0 +1,77 @@
+#chengweishagnjia{
+	width: 400px; 
+	height: 260px; 
+	background: white;
+	margin-top: 15%;
+	margin-left: 35%;
+	opacity: 0.9;
+}
+#tijiao{
+	 position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    left: 20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px 40px;
+}
+#tijiao input {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    left: 0px;
+}
+#tijiao:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+#preview{
+	margin: 0px 150px;
+}
+#dianming{
+	 position: relative;
+	width: 250px;
+    height: 30px;
+/*    display: inline-block;*/
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 20px;
+/*    overflow: hidden;*/
+    color: #1E88C7;
+ /*   text-decoration: none;*/
+   /* text-indent: 0;*/
+    line-height: 20px;
+    left: 20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px 40px;
+    outline:none;
+}
+#anniu input{
+	background: #D0EEFF;
+	border: none;
+	width: 100px;
+	height: 30px;
+	border-radius:10px ;
+}
+#anniu input:hover{
+	cursor: pointer;
+	background: #AADFFD;;
+}
+#anniu{
+	margin: 0px 80px;
+}
+/*测试测试*/

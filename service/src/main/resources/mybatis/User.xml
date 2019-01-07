@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chilema.dao.UserDAO">
+	<!-- 根据USERID查询权限 -->
+	<select id="Getuser_group" parameterType="java.util.Map" resultType="com.chilema.entity.UserGroup">
+		select * from user_group where userId=#{userId}
+	</select>
+	<!-- 更改增加权限  默认权限为用户-->
+	<insert id="savaUserGroup" parameterType="com.chilema.entity.UserGroup">
+		insert into user_group (userId,groupId) values(#{userId},#{groupId})
+	</insert>
+	
+	<!-- 星宇表写的增加 -->
+	<insert id="register" parameterType="com.chilema.entity.User">
+		insert into user
+		(loginUser,password,userId) values(#{loginUser},#{password},#{userId})
+	</insert>
+	<!-- 根据id查询userinfo -->
+	<select id="findUserinfo" parameterType="java.util.Map"
+		resultType="com.chilema.entity.Userinfo">
+		select * from userinfo where phone=#{loginUser};
+	</select>
+	<select id="login" parameterType="java.util.Map" resultType="com.chilema.entity.User">
+		select * from user where loginUser =#{loginUser} and password=#{password}
+	</select>
+	<!-- 修改info表 -->
+	<update id="updataUserInfo" parameterType="java.util.Map">
+		update userinfo set nickname=#{nickName},
+		userName=#{userName},email=#{email}
+		,head=#{head},roomAddress=#{roomAddress}
+		where phone=#{phone}
+	</update>
+	<select id="findUser" parameterType="java.util.Map" resultType="com.chilema.entity.User">
+		select * from user where loginUser=#{loginUser}
+	</select>
+	<insert id="saveUserInfo" parameterType="java.util.Map">
+		insert into userInfo (userId,nickname,phone) values(#{userId},#{loginUser},#{loginUser})
+	</insert>
+	<update id="updataUserGroup">
+		update user_group set groupId=#{groupId} where userId=#{userId}
+	</update>
+</mapper>

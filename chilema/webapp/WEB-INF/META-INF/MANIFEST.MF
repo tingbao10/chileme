@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: dubbo-all
+Implementation-Version: 2.6.5
+Built-By: cvictory
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: dubbo-all
+Implementation-Vendor-Id: com.alibaba
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://github.com/apache/incubator-dubbo/dubbo
+Specification-Version: 2.6.5
+Implementation-Vendor: The Apache Software Foundation
+

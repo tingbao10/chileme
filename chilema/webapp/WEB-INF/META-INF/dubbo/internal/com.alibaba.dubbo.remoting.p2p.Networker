@@ -1,0 +1,8 @@
+multicast=com.alibaba.dubbo.remoting.p2p.support.MulticastNetworker
+file=com.alibaba.dubbo.remoting.p2p.support.FileNetworker
+
+multicast=com.alibaba.dubbo.remoting.p2p.support.MulticastNetworker
+file=com.alibaba.dubbo.remoting.p2p.support.FileNetworker
+
+multicast=com.alibaba.dubbo.remoting.p2p.support.MulticastNetworker
+file=com.alibaba.dubbo.remoting.p2p.support.FileNetworker
