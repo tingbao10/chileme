@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/tingbao10/)](https://github.com/tingbao10/) [![springmvc](https://github.com/tingbao10)](https://github.com/tingbao10) [![license](https://github.com/tingbao10)](https://github.com/tingbao10)
 
-`chileme`是一个基于其他搜索引擎构建的垂直小说搜索引擎，owllook目的是让阅读更简单、优雅，让每位读者都有舒适的阅读体验，如**搜书、阅读、收藏、追更、推荐等功能**：
+`chileme`项目采用 springmvc+spring+mybatis+mysql+dubbo+redis 方式架构，mvc模式开发，dao工厂模式，spring管理组件，数据源以及控制事物，springmvc实现mvc，RESTFUL风格开发，使用 dubbo 与账务系统通信，前端采用http+ajax，  项目主要包括，菜单管理模块，用户管理模块，任务管理, 短信注册等
 
 - 演示网址：[暂无](https://github.com/tingbao10)
 - 微信号：[**西瓜儿**](https://github.com/tingbao10/img/blob/master/wechatadd.jpg)，有兴趣的话可以添加下
